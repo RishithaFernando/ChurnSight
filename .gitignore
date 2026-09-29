@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+env/
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Node modules
+frontend/node_modules/
+frontend/build/
+
+# Large model artifacts (too big for GitHub)
+churnsight_artifacts/X_train.csv
+churnsight_artifacts/X_test.csv
+churnsight_artifacts/y_train.csv
+churnsight_artifacts/y_test.csv
+
+# Database
+*.db
+*.sqlite
+
+# Environment variables
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
