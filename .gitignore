@@ -34,3 +34,6 @@ Thumbs.db
 
 # VS Code
 .vscode/
+
+generate_test_data.py
+add_medium_risk.py

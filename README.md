@@ -64,32 +64,44 @@ giving the business actionable insights rather than just a prediction.
 
 ## Project Structure
 
+```
 ChurnSight/
 │
 ├── backend/
-│ └── app.py # Flask API
+│   └── app.py                         # Flask REST API
 │
 ├── frontend/
-│ └── src/
-│ ├── pages/ # React pages
-│ └── components/ # Reusable components
+│   └── src/
+│       ├── pages/                     # React pages
+│       │   ├── AdminDashboard.jsx
+│       │   ├── AdminLogin.jsx
+│       │   ├── AllCustomersPage.jsx
+│       │   ├── AnalyticsPage.jsx
+│       │   ├── CampaignDetail.jsx
+│       │   ├── CampaignsPage.jsx
+│       │   ├── CustomerDetail.jsx
+│       │   ├── Survey.jsx
+│       │   └── ThankYou.jsx
+│       └── components/                # Reusable components
+│           ├── AdminBackground.jsx
+│           ├── AdminLayout.jsx
+│           ├── RiskBadge.jsx
+│           ├── ShapChart.jsx
+│           └── ProtectedRoute.jsx
 │
 ├── churnsight_artifacts/
-│ ├── xgb_model.pkl # Trained XGBoost model
-│ ├── scaler.pkl # Feature scaler
-│ └── feature_cols.pkl # Feature column list
+│   ├── xgb_model.pkl                  # Trained XGBoost model
+│   ├── scaler.pkl                     # Feature scaler
+│   └── feature_cols.pkl               # Feature column list
 │
-├── churnsight_eda.ipynb # Exploratory Data Analysis
-├── churnsight_preprocessing.ipynb # Data Preprocessing
-├── churnsight_model.ipynb # Model Training & Evaluation
-├── churnsight_shap.ipynb # SHAP Explainability Analysis
-├── generate_test_data.py # Test data generation script
-├── database_setup.sql
+├── churnsight_eda.ipynb               # Exploratory Data Analysis
+├── churnsight_preprocessing.ipynb     # Data Preprocessing
+├── churnsight_model.ipynb             # Model Training and Evaluation
+├── churnsight_shap.ipynb              # SHAP Explainability Analysis
+├── database_setup.sql                 # PostgreSQL database schema
+├── telco.csv                          # IBM Telco dataset
 └── README.md
-
-
-
----
+```
 
 ## Screenshots
 
